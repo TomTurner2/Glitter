@@ -2,3 +2,7 @@
 .vs/
 CMakeFiles/
 Debug/
+CMakeCache.txt
+Glitter/Vendor/assimp
+Glitter/Vendor/bullet
+/Glitter/Vendor
