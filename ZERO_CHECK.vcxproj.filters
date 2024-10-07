@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Tom\Documents\GitHub\Glitter\CMakeFiles\a248d9a842fb3d32e6a437c43d9e45f8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{292BBE29-6FD8-3BEF-96F5-8B4212047E69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

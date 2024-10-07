@@ -1,1 +1,4 @@
 [Bb]uild/
+.vs/
+CMakeFiles/
+Debug/
