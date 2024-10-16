@@ -23,17 +23,20 @@ unsigned int indices[] = { // note that we start from 0!
 };
 
 const char* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
+"layout (location = 0) in vec3 aPos; // position has attribute position 0\n"
+"out vec4 vertexColor; // specify a color output to the fragment shader\n"
 "void main()\n"
 "{\n"
-" gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+"gl_Position = vec4(aPos, 1.0); // we give a vec3 to vec4’s constructor\n"
+"vertexColor = vec4(0.5, 0.0, 0.0, 1.0); // output variable to dark-red\n"
 "}\0";
 
 const char* fragmentShaderSource = "#version 330 core\n"
 "out vec4 FragColor;\n"
+"in vec4 vertexColor; // input variable from vs (same name and type)\n"
 "void main()\n"
 "{\n"
-" FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"FragColor = vertexColor;\n"
 "}\0";
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
