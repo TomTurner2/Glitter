@@ -92,17 +92,20 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GLFW_INCLUDE_NONE;PROJECT_SOURCE_DIR="C:/Users/Tom/Documents/GitHub/Glitter";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GLFW_INCLUDE_NONE;PROJECT_SOURCE_DIR=\"C:/Users/Tom/Documents/GitHub/Glitter\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -117,7 +120,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Tom/Documents/GitHub/Glitter/Glitter/Shaders C:/Users/Tom/Documents/GitHub/Glitter/Glitter/Debug
 if %errorlevel% neq 0 goto :cmEnd
@@ -149,12 +153,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLFW_INCLUDE_NONE;PROJECT_SOURCE_DIR="C:/Users/Tom/Documents/GitHub/Glitter";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -176,7 +182,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Tom/Documents/GitHub/Glitter/Glitter/Shaders C:/Users/Tom/Documents/GitHub/Glitter/Glitter/Release
 if %errorlevel% neq 0 goto :cmEnd
@@ -208,12 +215,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLFW_INCLUDE_NONE;PROJECT_SOURCE_DIR="C:/Users/Tom/Documents/GitHub/Glitter";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -235,7 +244,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Tom/Documents/GitHub/Glitter/Glitter/Shaders C:/Users/Tom/Documents/GitHub/Glitter/Glitter/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
@@ -268,12 +278,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLFW_INCLUDE_NONE;PROJECT_SOURCE_DIR="C:/Users/Tom/Documents/GitHub/Glitter";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -293,7 +305,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Tom/Documents/GitHub/Glitter/Glitter/Shaders C:/Users/Tom/Documents/GitHub/Glitter/Glitter/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
@@ -387,6 +400,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="C:\Users\Tom\Documents\GitHub\Glitter\Readme.md">
     </None>
     <ClCompile Include="C:\Users\Tom\Documents\GitHub\Glitter\Glitter\Vendor\glad\src\glad.c" />
+    <None Include="Glitter\Shaders\FragmentShader.frag" />
+    <None Include="Glitter\Shaders\VertexShader.vert" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Tom\Documents\GitHub\Glitter\ZERO_CHECK.vcxproj">
