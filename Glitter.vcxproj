@@ -400,8 +400,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="C:\Users\Tom\Documents\GitHub\Glitter\Readme.md">
     </None>
     <ClCompile Include="C:\Users\Tom\Documents\GitHub\Glitter\Glitter\Vendor\glad\src\glad.c" />
-    <None Include="Glitter\Shaders\FragmentShader.frag" />
-    <None Include="Glitter\Shaders\VertexShader.vert" />
+    <None Include="FragmentShader.frag" />
+    <None Include="VertexShader.vert" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Tom\Documents\GitHub\Glitter\ZERO_CHECK.vcxproj">

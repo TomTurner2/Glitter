@@ -21,10 +21,10 @@
     <None Include="C:\Users\Tom\Documents\GitHub\Glitter\.gitignore" />
     <None Include="C:\Users\Tom\Documents\GitHub\Glitter\.gitmodules" />
     <None Include="C:\Users\Tom\Documents\GitHub\Glitter\Readme.md" />
-    <None Include="Glitter\Shaders\VertexShader.vert">
+    <None Include="FragmentShader.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="Glitter\Shaders\FragmentShader.frag">
+    <None Include="VertexShader.vert">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
