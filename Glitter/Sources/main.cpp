@@ -29,6 +29,17 @@ unsigned int indices[] = {
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
+class ShaderFile
+{
+public:
+    static constexpr const char* VertexShader_6_3 = "VertexShader-6-3.vert";
+    static constexpr const char* FragmentShader_6_3 = "FragmentShader-6-3.frag";
+
+    static constexpr const char* VertexShader_6_4 = "VertexShader-6-4.vert";
+    static constexpr const char* FragmentShader_6_4 = "FragmentShader-6-4.frag";
+};
+
+
 const std::string* LoadShader(const char* filePath)
 {
     std::ifstream t(filePath);  // Only the file name is needed if in the same directory
@@ -131,8 +142,8 @@ int main(int argc, char* argv[])
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     // Load and Compile Shaders
-    auto fragShader = LoadShader("FragmentShader.frag");
-    auto vertShader = LoadShader("VertexShader.vert");
+    auto fragShader = LoadShader(ShaderFile::FragmentShader_6_4);
+    auto vertShader = LoadShader(ShaderFile::VertexShader_6_4);
 
     // Check if shaders were loaded correctly
     if (!fragShader || !vertShader) 
@@ -165,6 +176,17 @@ int main(int argc, char* argv[])
             glfwSetWindowShouldClose(mWindow, true);
         }
 
+        // Update colour
+        int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
+
+        if (vertexColorLocation != -1)
+        {
+            float timeValue = glfwGetTime();
+            float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
+            glUseProgram(shaderProgram);
+            glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+        }
+        
         // Clear screen
         glClearColor(0.25f, 0.25f, 0.25f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
